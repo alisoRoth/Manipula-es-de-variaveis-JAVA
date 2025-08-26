@@ -1,0 +1,13 @@
+class Main {
+    public static void main(String[] args) {
+        int numero = 4;
+
+        int calculo = numero % 2;
+
+      if (calculo == 0) {
+          System.out.println("Par");
+      }else {
+          System.out.println("Ímpar");
+      }
+    }
+}
