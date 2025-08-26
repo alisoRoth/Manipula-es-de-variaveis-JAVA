@@ -1,0 +1,19 @@
+public static void main(String[] args) {
+   int idadePessoa = 24;
+   double alturaPessoa = 1.75;
+   String nomePessoa = "cucaBeludo";
+   boolean estudante = (false);
+   int somaIdades = (idadePessoa *2);
+   double alturaDobrada = (alturaPessoa *2);
+
+
+   System.out.println("A idade é: " + idadePessoa);
+   System.out.println("Sua altura: " + alturaPessoa);
+   System.out.println("Seu nome: " + nomePessoa);
+   System.out.println("É estudante? " + estudante);
+   System.out.println("Soma das idades: " + somaIdades);
+   System.out.println("O dobro da altura: " + alturaDobrada );
+}
+
+
+
