@@ -1,0 +1,18 @@
+public static void main(String[] args) {
+   int idadePessoa = 24;
+   double salarioBruto = 2150.00;
+   String nomePessoa = "cucaBeludo";
+   int mesesTrabalhados = 12;
+   int produtosCompradosAnual = 28;
+   double valorProdutos = 30;
+   double salarioAnualBruto = (salarioBruto * mesesTrabalhados);
+   double totalProdutos = (produtosCompradosAnual * valorProdutos);
+   double salarioLimpoAnual = (salarioAnualBruto - totalProdutos);
+
+
+   System.out.println("Olá " + nomePessoa + ", seu salário bruto anual é " + salarioAnualBruto + ", seus gastos foram de "
+   + totalProdutos + " e no final do ano o valor limpo de seu salário é de " + salarioLimpoAnual);
+
+
+}
+
