@@ -1,0 +1,41 @@
+import java.text.DecimalFormat;
+
+public class Main{
+    public static void main(String[] args) {
+
+
+        double custoProduto = 10;
+        String nomeProduto = "KitKat";
+        int unidadesProduto = 12;
+        double impostoProduto = 0.3;
+        double margemLucro = 0.3;
+        double valorImposto = custoProduto * impostoProduto;
+        double custoReal = custoProduto + valorImposto;
+        double valorLucro = custoReal * margemLucro;
+        double precoVenda = custoReal + valorLucro;
+        double valorTotalsemImpostos = custoProduto * unidadesProduto;
+        double valorImpostoSeparado = unidadesProduto * valorImposto;
+        double totalProdutos = unidadesProduto * custoProduto;
+        String padrao = "R$ ###,##0.00";
+        DecimalFormat df = new DecimalFormat(padrao);
+
+
+        System.out.println("O custo de cada " + nomeProduto +  " foi: " + df.format(custoProduto));
+        System.out.println("Foi comprado " + unidadesProduto + " unidades");
+        System.out.println("O total da compra foi de: " + df.format(totalProdutos ) );
+        System.out.println("O valor de impostos é de: " + impostoProduto * 100 + "%");
+        System.out.println("O preço de impostos do produto é de: " + df.format(valorImpostoSeparado) + " reais");
+        System.out.println("A margem esperada é de: " + margemLucro *100 + "%");
+        System.out.println("O preço de venda do produto será de: " + df.format(precoVenda)  );
+        System.out.println("Cada um renderá " + df.format(valorLucro) );
+
+
+    }
+
+}
+
+
+
+
+
+
