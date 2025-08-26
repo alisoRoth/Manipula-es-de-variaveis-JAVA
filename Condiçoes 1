@@ -1,0 +1,15 @@
+class Main {
+    public static void main(String[] args) {
+        int idadePessoa = 18;
+
+        if (idadePessoa < 18){
+            System.out.println("Menor de idade");
+        } else{
+            System.out.println("Maior de idade");
+        }
+
+
+
+
+    }
+}
